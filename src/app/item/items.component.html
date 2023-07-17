@@ -1,0 +1,29 @@
+<ActionBar title="My App"> </ActionBar>
+
+<GridLayout columns="*" rows="*,auto,*" background="#fff" height="48dp">
+  <GridLayout
+    class="toggle"
+    row="1"
+    columns="*,*"
+    (loaded)="onToggleLoaded($event)"
+  >
+    <Label id="toggler" class="toggler"></Label>
+
+    <Label
+      id="list"
+      text="List view"
+      col="0"
+      class="toggle-lbl text-center"
+      [ngClass]="!mapView ? 'selected-index' : ''"
+      (tap)="switchTab(0)"
+    ></Label>
+    <Label
+      id="map"
+      text="Map view"
+      col="1"
+      class="toggle-lbl text-center"
+      [ngClass]="mapView ? 'selected-index' : ''"
+      (tap)="switchTab(1)"
+    ></Label>
+  </GridLayout>
+</GridLayout>

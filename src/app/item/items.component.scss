@@ -1,0 +1,29 @@
+.toggle {
+  background-color: white;
+  border-width: 1;
+  border-color: blue;
+  background-color: lightgray;
+  height: 34;
+  margin-left: 40;
+  margin-right: 40;
+  border-radius: 100;
+}
+
+.toggler {
+  background-color: white;
+  border-width: 1;
+  border-color: lightblue;
+  height: 30;
+  margin-left: 1;
+  margin-right: 1;
+  border-radius: 100;
+}
+
+.toggle-lbl {
+  vertical-align: middle;
+  font-size: 14sp;
+  color: black;
+  &.selected-index {
+    font-weight: bold;
+  }
+}
